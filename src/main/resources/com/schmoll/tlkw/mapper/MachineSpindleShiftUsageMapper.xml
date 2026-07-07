@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.schmoll.tlkw.mapper.MachineSpindleShiftUsageMapper">
+
+    <resultMap id="BaseResultMap" type="com.schmoll.tlkw.entity.MachineSpindleShiftUsage">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="machineId" column="machine_id" jdbcType="VARCHAR"/>
+            <result property="shiftStartTime" column="shift_start_time" jdbcType="TIMESTAMP"/>
+            <result property="shiftEndTime" column="shift_end_time" jdbcType="TIMESTAMP"/>
+            <result property="shiftType" column="shift_type" jdbcType="VARCHAR"/>
+            <result property="spindleId" column="spindle_id" jdbcType="INTEGER"/>
+            <result property="startSpindleHour" column="start_spindle_hour" jdbcType="INTEGER"/>
+            <result property="currentSpindleHour" column="current_spindle_hour" jdbcType="INTEGER"/>
+            <result property="shiftUsedHour" column="shift_used_hour" jdbcType="INTEGER"/>
+            <result property="lastCollectTime" column="last_collect_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,machine_id,shift_start_time,
+        shift_end_time,shift_type,spindle_id,
+        start_spindle_hour,current_spindle_hour,shift_used_hour,
+        last_collect_time
+    </sql>
+</mapper>

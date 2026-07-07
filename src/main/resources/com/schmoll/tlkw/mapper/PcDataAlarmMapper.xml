@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.schmoll.tlkw.mapper.PcDataAlarmMapper">
+
+    <resultMap id="BaseResultMap" type="com.schmoll.tlkw.entity.PcDataAlarm">
+            <id property="id" column="ID" jdbcType="BIGINT"/>
+            <result property="alarmcode" column="ALARMCODE" jdbcType="VARCHAR"/>
+            <result property="alarmdes" column="ALARMDES" jdbcType="VARCHAR"/>
+            <result property="alarmvalue" column="ALARMVALUE" jdbcType="VARCHAR"/>
+            <result property="createtime" column="CREATETIME" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,ALARMCODE,ALARMDES,
+        ALARMVALUE,CREATETIME
+    </sql>
+</mapper>

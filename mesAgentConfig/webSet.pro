@@ -1,0 +1,25 @@
+#Thu May 14 10:15:17 CST 2026
+overTime=10
+XYzero=false
+dischargeCode=D2154026
+TC=tagCode
+url=http\://192.168.10.71\:9000/wsservice/macWS?Wsdl
+heartbeatFrequency=30
+Tzero=1005
+G3test=0
+heartbeatPort=60001
+AGV04=A004
+eqpID=AF2512335
+AGV03=A003
+AGV02=A002
+setUpload=DataUpload
+AGV01=A001
+agvOutTime=30
+heartbeatContent=SSEMP
+heartbeatStart=false
+storeCode=D2154070
+agvTime=10
+TV=tagValue
+setRecipe=1004
+imesDrillTimeOut=30
+heartbeatIP=192.168.10.71

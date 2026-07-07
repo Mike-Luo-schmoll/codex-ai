@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.schmoll.tlkw.mapper.EapMaterialDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.schmoll.tlkw.entity.EapMaterialData">
+            <id property="id" column="ID" jdbcType="BIGINT"/>
+            <result property="product" column="PRODUCT" jdbcType="VARCHAR"/>
+            <result property="container" column="CONTAINER" jdbcType="VARCHAR"/>
+            <result property="count" column="COUNT" jdbcType="INTEGER"/>
+            <result property="materialcode" column="MATERIALCODE" jdbcType="VARCHAR"/>
+            <result property="itemcode" column="ITEMCODE" jdbcType="VARCHAR"/>
+            <result property="itemdes" column="ITEMDES" jdbcType="VARCHAR"/>
+            <result property="uom" column="UOM" jdbcType="VARCHAR"/>
+            <result property="itemvalue" column="ITEMVALUE" jdbcType="VARCHAR"/>
+            <result property="groupnum" column="GROUPNUM" jdbcType="BIGINT"/>
+            <result property="createtime" column="CREATETIME" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,PRODUCT,CONTAINER,
+        COUNT,MATERIALCODE,ITEMCODE,
+        ITEMDES,UOM,ITEMVALUE,
+        GROUPNUM,CREATETIME
+    </sql>
+</mapper>

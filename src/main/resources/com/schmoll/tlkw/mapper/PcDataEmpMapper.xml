@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.schmoll.tlkw.mapper.PcDataEmpMapper">
+
+    <resultMap id="BaseResultMap" type="com.schmoll.tlkw.entity.PcDataEmp">
+            <id property="id" column="ID" jdbcType="BIGINT"/>
+            <result property="empno" column="EMPNO" jdbcType="VARCHAR"/>
+            <result property="empname" column="EMPNAME" jdbcType="VARCHAR"/>
+            <result property="empcode" column="EMPCODE" jdbcType="VARCHAR"/>
+            <result property="empdes" column="EMPDES" jdbcType="VARCHAR"/>
+            <result property="emptime" column="EMPTIME" jdbcType="TIMESTAMP"/>
+            <result property="createtime" column="CREATETIME" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,EMPNO,EMPNAME,
+        EMPCODE,EMPDES,EMPTIME,
+        CREATETIME
+    </sql>
+</mapper>
