@@ -173,11 +173,6 @@ public class G3JP {
         resetBt = MainForm.getBT("复位", 650, 390, 80, 25);
         resetBt.setVisible(false);
 
-//        inBt.setVisible(false);
-//        outBt.setVisible(false);
-//        outShelfBt.setVisible(false);
-//        inShelfBt.setVisible(false);
-
         //叫料1，2，3  出料1，2，3
 //        inBt1 = MainForm.getBT("叫料1",610,10,80,40);
 //        inBt2 = MainForm.getBT("叫料2",610,75,80,40);
@@ -211,7 +206,6 @@ public class G3JP {
 
 
         selectBox = new JComboBox();
-        selectBox.setVisible(true);
         selectBox.setBounds((int) Math.round( 630 * MainForm.w_s80), (int) Math.round( 30 * MainForm.h_s80), (int) Math.round( 140 * MainForm.w_s80), (int) Math.round( 30 * MainForm.h_s80));  //630, 30, 140, 30  (int) Math.round( x * w_s80), (int) Math.round( y * h_s80), (int) Math.round( w * w_s80), (int) Math.round( h * h_s80)
 
         myTable = new RecipeTable(prg);
@@ -225,16 +219,14 @@ public class G3JP {
         mesMessageBody.setLineWrap(true);
         mesMessageBody.setWrapStyleWord(true);
 
-        StaticClass.jpAddJl(jp, jl1, jl2, jl3, jl4, jl5,moCi, jl6, jl7, jl8, jl9, jl10, jl11, jl12, jl13, VXjf, VYjf);//,bk1,bk2,bk3,bk4
+        StaticClass.jpAddJl(jp, jl1, jl10, jl11, jl12, jl13, VXjf, VYjf);//,bk1,bk2,bk3,bk4
 
-        StaticClass.jpAddJf(jp, work1, work2, work3, work4, work5, mociText,work6, wz, gx, cut, prg, userTxt, jf01);  //jf01(SSEM)
+        StaticClass.jpAddJf(jp, cut, prg, userTxt);
 
-        StaticClass.jpAddBt(jp, modeBt, logoutBt, affirmBt, clearBt, cutNameBt, recipeBt, completeBt, inBt, outBt,
-                outShelfBt, resetBt);//,inBt1,inBt2,inBt3,outBt1,outBt2,outBt3
+        StaticClass.jpAddBt(jp, modeBt, logoutBt, cutNameBt, recipeBt, completeBt, resetBt);
 
         jp.add(vv);
         jp.add(mesMessageBody);
-        jp.add(selectBox);
         initListener();
     }
    public static Dialog dialog;
